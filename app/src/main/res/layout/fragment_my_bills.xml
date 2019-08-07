@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/switch_thumb_normal_material_light"
+        tools:context=".MyBills">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mybillsRecyclerView"
+            android:layout_weight="1"
+            ></android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/bottomSheet"
+            android:text="Manage Bills"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/white"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right"
+            />
+
+
+    </LinearLayout>
+    <include layout="@layout/bottomsheet"></include>
+</android.support.design.widget.CoordinatorLayout>

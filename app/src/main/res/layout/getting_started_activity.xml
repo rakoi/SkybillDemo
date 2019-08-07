@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashscreenbackground"
+    tools:context=".GettingStartedActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/shield"
+        android:id="@+id/sheildIcon"
+        />
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Secure &amp; Convinient"
+        android:textSize="20sp"
+        android:layout_below="@+id/sheildIcon"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:id="@+id/secureText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay your bills anywhere  anytime"
+        android:layout_below="@+id/secureText"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:id="@+id/securemoreText"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@mipmap/morehorizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/securemoreText"
+        android:id="@+id/moreIcons"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moreIcons"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/termsText"
+
+        android:textColor="@color/white"
+        android:text="By  Skybill you agree to our"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/termsText"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorGreenLight"
+        android:layout_centerHorizontal="true"
+        android:text="@string/terms"
+        android:id="@+id/termsLink"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/termsLink"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/loginbuttonbackground"
+        android:id="@+id/Startlogin"
+        android:layout_marginBottom="15dp"
+
+        />
+
+</RelativeLayout>

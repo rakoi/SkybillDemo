@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/splashscreenbackground"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logoinverse"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/Loginlogo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/EnterphoneNumberText"
+        android:layout_below="@id/Loginlogo"
+        android:text="Enter Phone Number to Proceed"
+        />
+
+
+    <Spinner
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/countrySpinner"
+        android:layout_below="@id/EnterphoneNumberText"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNumberLayout"
+        android:orientation="vertical"
+        android:layout_below="@id/EnterphoneNumberText"
+        android:layout_toRightOf="@id/countrySpinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:text="Phone Number"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="phone"
+            android:id="@+id/phoneNumberInput"
+            android:textColor="@color/white"
+            android:background="@drawable/phonenumberbackground"
+            android:paddingBottom="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/warning"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/red"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/loginbuttonbackground"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_below="@id/phoneNumberLayout"
+        />
+
+
+
+</RelativeLayout>

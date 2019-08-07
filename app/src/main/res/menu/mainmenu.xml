@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+    android:id="@+id/notificationIcon"
+    app:showAsAction="always"
+    android:icon="@mipmap/notification_icon"
+    android:title="" />
+    <item
+        android:id="@+id/profileIcon"
+        app:showAsAction="always"
+        android:icon="@mipmap/profile"
+        android:title="" />
+    <item
+        android:id="@+id/invoiceMenuItem"
+        app:showAsAction="never"
+        android:title="Invoices" />
+    <item
+        android:id="@+id/transactionMenu"
+        app:showAsAction="never"
+        android:title="Transaction" />
+    <item
+        android:id="@+id/SettingsMenuItem"
+        app:showAsAction="never"
+        android:title="Settings" />
+    <item
+        android:id="@+id/paymentOptionsMenuItem"
+        app:showAsAction="never"
+        android:title="Payment Options" />
+    <item
+        android:id="@+id/share"
+        app:showAsAction="never"
+        android:title="ShareBtn" />
+    <item
+        android:id="@+id/LogoutBtn"
+        app:showAsAction="never"
+        android:title="Logout" />
+</menu>
